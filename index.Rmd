@@ -134,5 +134,5 @@ mode        : selfcontained # {standalone, draft}
 
 * Overall more is more (but you may have a 20 page supplement)
 
-<img src="movie_final.gif" style="float:right;" height=350 width=350 alt="Spinning floating brain">
+<img src="movie_final.gif" align="middle;" height=350 width=350 alt="Spinning floating brain">
 
