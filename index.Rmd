@@ -15,7 +15,7 @@ mode        : selfcontained # {standalone, draft}
 
 * How was the population recruited? 
 * What were the inclusion/exclusion criteria 
-* Who was excluded and *why*
+* Who was excluded and <strong>why</strong>
 
 ---
 
