@@ -79,6 +79,10 @@ mode        : selfcontained # {standalone, draft}
 
 * Determined by independent data / pilot data not included in analysis
 
+<img src="ROI.png"style="width:250px; height:250px;" alt="Lot of code">
+
+<font size="1">Figure from: Zotev, Vadim, et al. "Self-regulation of amygdala activation using real-time fMRI neurofeedback." PLoS One 6.9 (2011): e24522.</font>
+
 ---
 
 
