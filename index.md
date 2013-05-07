@@ -2,7 +2,7 @@
 title       : Guidelines for reporting an fMRI study
 subtitle    : Russell A. Poldrack, Paul C. Fletcher, Richard N. Henson, Keith J. Worsley, Matthew Brett, and Thomas E. Nichols
 author      : John Muschelli
-job         : 
+job         : "@StrictlyStat"
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -123,6 +123,11 @@ mode        : selfcontained # {standalone, draft}
 * Very detailed descriptions and captions
 
 * I tend to look at pictures first in a paper (maybe second to abstract)
+
+<img src="Glass_Brains.png">
+
+<font size="1">Figure from: Sahni, H; Jayakumar P. N., Pal, P.K. Functional magnetic resonance imaging in primary writing tremor and writer’s cramp: A pilot study. Ann Indian Acad Neurol. 2010 Jul-Sep; 13(3): 192–197.</font>
+
 
 ---
 
