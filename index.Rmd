@@ -135,6 +135,5 @@ mode        : selfcontained # {standalone, draft}
 * Seems like the way the community is going (and should be)
 
 * Overall more is more (but you may have a 20 page supplement)
-
-<img src="movie_final.gif" style="float:center;" height=350 width=350 alt="Spinning floating brain">
+<img src="movie_final.gif" style="float:right;" height=350 width=350 alt="Spinning floating brain">
 
