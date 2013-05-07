@@ -11,48 +11,130 @@ mode        : selfcontained # {standalone, draft}
 ---
 
 
+## Overall
+
+* Paper describes guidelines in fMRI, based mainly on task, but most apply to Resting State
+
+* Provides a "checklist" that the authors believe should be used as a criteria for publication
+
+* Acknowledges the information added will lengthen papers, but allow for more reproducible and transparent reporting
+
+* (Had a lot of influential people as primary "editors")
+
+---
+
 ## Describe both who the subjects were and who they were not
 
 * How was the population recruited? 
 * What were the inclusion/exclusion criteria 
 * Who was excluded and <strong>why</strong>
+* Demographics table
 
 ---
+
+## Describe both who the subjects were and who they were not
+
+<dd class="table"><table><colgroup><col><col></colgroup><tbody><tr><td rowspan="1" colspan="1">Number of subjects</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Age (mean and range)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Handedness</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Number of males/female</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Additional inclusion/exclusion criteria, if any (including specific sampling strategies that limit inclusion to a specific group, such as laboratory members)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">If any subjects were scanned but then rejected from analysis after data collection, state how many and reasons for rejection</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">For group comparisons, what variables (if any) were equated across groups?</td><td rowspan="1" colspan="1"></td></tr></tbody></table></dd>
+
+---
+
+## Data Acquisition
+
+<dd class="table"><table><colgroup><col><col></colgroup><tbody><tr><td rowspan="1" colspan="1">MRI system:</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Manufacturer, field strength (in Tesla), model name</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">MRI acquisition:</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Number of experimental sessions and volumes acquired per session</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Pulse sequence type (gradient/spin echo, EPI/spiral)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;If used, parallel imaging parameters (e.g., method [SENSE/GRAPPA] and acceleration factor)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Field of view, matrix size, slice thickness, interslice skip</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Acquisition orientation (axial, sagittal, coronal, oblique; if axials co-planar with AC&ndash;PC, the volume coverage in terms of <em>Z</em> in mm)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Whole brain? if not, state area of acquisition (preferably with a figure)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Order of acquisition of slices (sequential or interleaved)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;TE/TR/flip angle</td><td rowspan="1" colspan="1"></td></tr></tbody></table></dd>
+
+---
+
 
 ## Quality control measures should be documented
 
+* Why did you throw out participant 34?
+
+* What do you call a "good" registration?
+
+* How much is too much with respect to motion?
+
+* Probably least standardized within fMRI
+
 ---
+
 
 ## Describe both what the subjects were asked to do and what they actually did
 
+* What was the task performed?
+
+* What are the details? 
+    * Inter-stimulus interval
+    * Were the blocks randomly permuted
+
+* Were there any "mock sessions"
+
 ---
+
+
 ## Specify how regions of interest were determined
 
+* A priori knowledge / other literature
+
+* Anatomically - how were the delineated
+
+* Determined by independent data / pilot data not included in analysis
+
 ---
 
+
 ## Provide enough detail to reproduce the analysis
+
+* Software used, including version number and any options specified
+
+* Detailed preprocessing steps
+    * Were all processed exactly the same way? If not, explain
+
+* Scripts or code is very helpful here, especially if not using standard software 
+
+* Flowcharts?!
+
+---
+
+## Preprocessing
+<dd class="table"><table><colgroup><col><col></colgroup><tbody><tr><td rowspan="1" colspan="1">Specify order of preprocessing operations</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Describe any data quality control measures</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Unwarping of B0 distortions</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Slice timing correction</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Reference slice and type of interpolation used (e.g., &ldquo;Slice timing correction to the first slice as performed, using SPM5's Fourier phase shift interpolation&rdquo;)</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">Motion correction</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Reference scan, image similarity metric, type of interpolation used, degrees-of-freedom (if not rigid body) and, ideally, optimization method, e.g., &ldquo;Head motion corrected with FSL's MCFLIRT by maximizing the correlation ratio between each timepoint and the middle volume, using linear interpolation.&rdquo;</td><td rowspan="1" colspan="1"></td></tr><tr><td rowspan="1" colspan="1">&#xA0;Motion susceptibility correction used</td><td rowspan="1" colspan="1"></td></tr></tbody></table></dd>
 
 ---
 
 ## Report statistical tests to support all claims
 
+* Some reports of "seeing" differences based on masked contrasts
+
+* Need tests of appropriate contrasts to make claims
+    * Seeing region A in group 1 and not seeing it in group 2 does not mean it's differentially expressed
+
 ---
 
 ## Always describe and account for the multiple testing problem
 
+* Did you present FDR/FWER/uncorrected p-values
+* Authors suggest also presenting (or supplementing) the maps with unthresholded maps for comparison across studies
+
 ---
 
-## Figures and tables should stand on their own
+## The cheese stands alone
+
+* Figures and tables should stand on their own
+
+* Very detailed descriptions and captions
+
+* I tend to look at pictures first in a paper (maybe second to abstract)
 
 ---
 
+## Give me your brains!
 
-## Read-And-Delete
+* "The best test of reproducibility is allowing others to directly reproduce the analysis on your own data" - page 410
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+* Some of this has been happening, but mainly with resting-state fMRI and not as much of task-based.
 
---- .class #id 
+* Seems like the way the community is going (and should be)
 
+* Overall more is more (but you may have a 20 page supplement)
+
+---
 
