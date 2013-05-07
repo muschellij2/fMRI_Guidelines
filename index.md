@@ -130,11 +130,9 @@ mode        : selfcontained # {standalone, draft}
 
 * "The best test of reproducibility is allowing others to directly reproduce the analysis on your own data" - page 410
 
-* Some of this has been happening, but mainly with resting-state fMRI and not as much of task-based.
-
-* Seems like the way the community is going (and should be)
+* Some of this has been happening, but mainly with resting-state and not as much of task.
 
 * Overall more is more (but you may have a 20 page supplement)
 
-<img src="movie_final.gif" style="float:center;" height=350 width=350 alt="Spinning floating brain">
+<img src="movie_final.gif" style="float:right;" height=350 width=350 alt="Spinning floating brain">
 
